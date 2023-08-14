@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: statusquarkusio-ntsb
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-zzjs-tenant/status-quarkus-io/statusquarkusio-ntsb@sha256:8428b2891bc300bc1e2266432b8a1f6244ceccc98f4804a17c1d473930a44cd5
+        name: my-java-quarkus
+        resources: {}
+status: {}
